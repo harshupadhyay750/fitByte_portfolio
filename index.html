@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harsh Upadhyay - Developer Portfolio. Showcasing fitByte, an AI-powered fitness, diet, and nutrition tracker app with customized dashboards and Google Auth.">
+  <meta name="keywords" content="Harsh Upadhyay, Developer, Portfolio, fitByte, Fitness App, AI Diet Planner, Mobile Developer, Full Stack, UI/UX">
+  <meta name="author" content="Harsh Upadhyay">
+  <title>Harsh Upadhyay | Mobile & Full-Stack Developer - fitByte Showcase</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Floating Header / Navigation -->
+  <header id="main-header">
+    <a href="#" class="logo">
+      <div class="logo-dot"></div>
+      Harsh<span>Upadhyay</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero" class="active" id="nav-home">Home</a></li>
+        <li><a href="#showcase" id="nav-showcase">fitByte App</a></li>
+        <li><a href="#interactive" id="nav-interactive">Interactive Demo</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal active">
+        <div class="hero-tag">Available for Opportunities</div>
+        <h1 class="hero-title">
+          Hi, I'm Harsh.<br>
+          I build <span>digital health</span> experiences.
+        </h1>
+        <p class="hero-desc">
+          I am a Mobile & Full-Stack Developer specializing in crafting clean, performance-optimized, and user-centric applications. My flagship project, <strong>fitByte</strong>, combines AI nutrition planning with real-time calorie tracking.
+        </p>
+        <div class="hero-ctas">
+          <a href="#showcase" class="btn btn-primary" id="hero-btn-primary">
+            Explore fitByte <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#interactive" class="btn btn-secondary" id="hero-btn-secondary">
+            Try Interactive Widget
+          </a>
+        </div>
+        <div class="app-links">
+          <a href="#" class="app-btn play-store" id="hero-link-play">
+            <i class="fa-brands fa-google-play"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">GET IT ON</span>
+              <span class="btn-main">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="app-btn app-store" id="hero-link-apple">
+            <i class="fa-brands fa-apple"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">Download on the</span>
+              <span class="btn-main">App Store</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="app-btn github-code" id="hero-link-github">
+            <i class="fa-brands fa-github"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">View Source</span>
+              <span class="btn-main">GitHub Code</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="phone-mockup-wrapper reveal active">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <img src="assets/media__1781517113429.jpg" alt="fitByte Smart Dashboard Mockup" id="hero-phone-img">
+            <div class="phone-reflection"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- fitByte App Showcase Section -->
+  <section id="showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Flagship Project</span>
+        <h2 class="section-title">fitByte — AI Fitness & Nutrition</h2>
+        <p>A smart, intuitive health companion that tracks calories, macros, and water intake while using AI to plan vegetarian diet strategies.</p>
+        <div class="app-links" style="justify-content: center; margin-top: 2rem;">
+          <a href="#" class="app-btn play-store" id="showcase-link-play">
+            <i class="fa-brands fa-google-play"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">GET IT ON</span>
+              <span class="btn-main">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="app-btn app-store" id="showcase-link-apple">
+            <i class="fa-brands fa-apple"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">Download on the</span>
+              <span class="btn-main">App Store</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="app-btn github-code" id="showcase-link-github">
+            <i class="fa-brands fa-github"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">View Source</span>
+              <span class="btn-main">GitHub Code</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="showcase-grid">
+        <!-- Left Side: Phone Device Carousel -->
+        <div class="showcase-mockup-area reveal">
+          <div class="phone-mockup">
+            <div class="phone-screen" style="display: flex; overflow: hidden;">
+              <div class="showcase-slider-container" id="showcase-slider">
+                <!-- Slide 1: Welcome & Login -->
+                <div class="showcase-slide">
+                  <img src="assets/media__1781517113382.jpg" alt="fitByte Login Screen">
+                </div>
+                <!-- Slide 2: Google Sign-In -->
+                <div class="showcase-slide">
+                  <img src="assets/media__1781517113421.jpg" alt="fitByte Google Auth Dialog">
+                </div>
+                <!-- Slide 3: Smart Dashboard -->
+                <div class="showcase-slide">
+                  <img src="assets/media__1781517113429.jpg" alt="fitByte Calories & Macro Dashboard">
+                </div>
+                <!-- Slide 4: AI Diet Planner -->
+                <div class="showcase-slide">
+                  <img src="assets/media__1781517113399.jpg" alt="fitByte AI Diet Strategy">
+                </div>
+                <!-- Slide 5: Live Dashboard Sync -->
+                <div class="showcase-slide">
+                  <img src="assets/media__1781517113447.jpg" alt="fitByte Diet Planner Sync">
+                </div>
+              </div>
+              <div class="phone-reflection"></div>
+            </div>
+          </div>
+          
+          <div class="showcase-controls">
+            <button class="slider-btn" id="slider-prev" aria-label="Previous Slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn" id="slider-next" aria-label="Next Slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side: Info cards matching slides -->
+        <div class="showcase-info-cards reveal">
+          <div class="info-card active" data-slide="0" id="card-step-0">
+            <h3><i class="fa-solid fa-right-to-bracket"></i> Intuitive Login & Onboarding</h3>
+            <p>Elegant design welcome interface built for effortless onboarding, keeping users engaged from the very first tap.</p>
+          </div>
+          
+          <div class="info-card" data-slide="1" id="card-step-1">
+            <h3><i class="fa-brands fa-google"></i> Multi-Account Google Sign-In</h3>
+            <p>Seamlessly integrated Firebase OAuth supporting multiple accounts with secure, quick sign-in profiles.</p>
+          </div>
+          
+          <div class="info-card" data-slide="2" id="card-step-2">
+            <h3><i class="fa-solid fa-chart-pie"></i> Smart Dashboard Tracker</h3>
+            <p>Provides a clean calorie breakdown: Goals, Eaten (e.g. dal chawal), Burned, and macro rings tracking Protein, Carbs, and Fats in real time.</p>
+          </div>
+          
+          <div class="info-card" data-slide="3" id="card-step-3">
+            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Diet Planner</h3>
+            <p>Generates targeted calorie strategies (like Weight Loss Deficit) and maps out required macronutrients (179g Protein, 239g Carbs, 79g Fat).</p>
+          </div>
+          
+          <div class="info-card" data-slide="4" id="card-step-4">
+            <h3><i class="fa-solid fa-arrows-rotate"></i> Real-time Dashboard Sync</h3>
+            <p>Automated cloud sync dynamically monitors logs and prompts helpful sync feedback banners e.g., "You have reached 17% of your daily goal."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Dashboard Widget Section -->
+  <section id="interactive" class="interactive-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Try It Live</span>
+        <h2 class="section-title">Interactive App Widget</h2>
+        <p>Witness the dashboard math and circular gauge logic in action. Adjust macros, log mock meals, and add water to see the widget react instantly.</p>
+      </div>
+
+      <div class="widget-grid">
+        <!-- Left Side: Controls -->
+        <div class="widget-controls-card reveal">
+          <h3>Interactive Control Panel</h3>
+          
+          <!-- Slider 1: Protein -->
+          <div class="control-group">
+            <label for="slider-protein">Protein Target: <span id="label-protein">179 g</span></label>
+            <input type="range" id="slider-protein" class="control-slider slider-protein" min="50" max="250" value="179">
+          </div>
+
+          <!-- Slider 2: Carbs -->
+          <div class="control-group">
+            <label for="slider-carbs">Carbs Target: <span id="label-carbs">239 g</span></label>
+            <input type="range" id="slider-carbs" class="control-slider slider-carbs" min="100" max="400" value="239">
+          </div>
+
+          <!-- Slider 3: Fat -->
+          <div class="control-group">
+            <label for="slider-fat">Fat Target: <span id="label-fat">79 g</span></label>
+            <input type="range" id="slider-fat" class="control-slider slider-fat" min="30" max="150" value="79">
+          </div>
+          
+          <!-- Quick actions -->
+          <div class="control-group">
+            <label>Log Activities</label>
+            <div class="quick-actions">
+              <button class="action-btn action-btn-primary" id="btn-log-meal">
+                <i class="fa-solid fa-utensils"></i> Log Meal (+420 kcal)
+              </button>
+              <button class="action-btn" id="btn-reset-widget">
+                <i class="fa-solid fa-rotate-left"></i> Reset Progress
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Re-created fitByte Mobile UI -->
+        <div class="widget-mockup-wrapper reveal">
+          <div class="app-widget" id="app-widget-view">
+            <!-- Header -->
+            <div class="app-widget-header">
+              <h4>Dashboard</h4>
+              <div class="app-widget-header-icons">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </div>
+
+            <!-- Calorie Card -->
+            <div class="app-calorie-card">
+              <div class="calorie-left">
+                <span class="calorie-label">Remaining</span>
+                <span class="calorie-value" id="widget-val-remaining">1975</span>
+                <div class="calorie-stats">
+                  <div class="calorie-stat">Eaten <span id="widget-val-eaten">420</span></div>
+                  <div class="calorie-stat">Burned <span id="widget-val-burned">0</span></div>
+                  <div class="calorie-stat">Goal <span id="widget-val-goal">2395</span></div>
+                </div>
+              </div>
+              
+              <!-- Circular Progress Gauge -->
+              <div class="calorie-gauge-wrapper">
+                <svg class="gauge-svg">
+                  <!-- r = 40, circumference = 251.2 -->
+                  <circle class="gauge-track" cx="45" cy="45" r="40"></circle>
+                  <circle class="gauge-fill" id="widget-gauge-circle" cx="45" cy="45" r="40"></circle>
+                </svg>
+                <div class="gauge-text"><span id="widget-val-percent">17</span>%</div>
+              </div>
+            </div>
+
+            <!-- Macros Row -->
+            <div class="app-macros-row">
+              <!-- Protein -->
+              <div class="macro-card">
+                <span class="macro-title">Protein</span>
+                <div class="macro-bar-container">
+                  <div class="macro-bar macro-bar-protein" id="bar-protein"></div>
+                </div>
+                <span class="macro-number"><span id="widget-protein-curr">20.5</span>/<span id="widget-protein-target">179</span>g</span>
+              </div>
+              
+              <!-- Carbs -->
+              <div class="macro-card">
+                <span class="macro-title">Carbs</span>
+                <div class="macro-bar-container">
+                  <div class="macro-bar macro-bar-carbs" id="bar-carbs"></div>
+                </div>
+                <span class="macro-number"><span id="widget-carbs-curr">70.2</span>/<span id="widget-carbs-target">239</span>g</span>
+              </div>
+
+              <!-- Fat -->
+              <div class="macro-card">
+                <span class="macro-title">Fat</span>
+                <div class="macro-bar-container">
+                  <div class="macro-bar macro-bar-fat" id="bar-fat"></div>
+                </div>
+                <span class="macro-number"><span id="widget-fat-curr">10.8</span>/<span id="widget-fat-target">79</span>g</span>
+              </div>
+            </div>
+
+            <div class="widget-section-title">Quick Tools</div>
+            <div class="app-tools-grid">
+              <div class="tool-item tool-workout">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>Workout</span>Log Exercise
+              </div>
+              <div class="tool-item tool-suggest">
+                <i class="fa-regular fa-lightbulb"></i>
+                <span>Smart Suggest</span>AI Meal Idea
+              </div>
+              <div class="tool-item tool-calc">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Macro Calc</span>By Weight
+              </div>
+            </div>
+
+            <!-- Water Intake Card -->
+            <div class="app-water-card">
+              <div class="water-top">
+                <div class="water-title-wrapper">
+                  <div class="water-icon-circle">
+                    <i class="fa-solid fa-droplet"></i>
+                  </div>
+                  <div class="water-info">
+                    <span class="water-label">Water Intake</span>
+                    <span class="water-count"><span id="widget-water-curr">0</span> / 2500 ml</span>
+                  </div>
+                </div>
+                <button class="water-btn-add" id="widget-btn-add-water" aria-label="Add 250ml water">+</button>
+              </div>
+              <div class="water-bar-wrapper">
+                <div class="water-bar-fill" id="bar-water"></div>
+              </div>
+            </div>
+
+            <!-- Recreated Mobile Bottom Nav Bar -->
+            <div class="app-nav">
+              <a href="#" class="app-nav-item app-nav-item-active">
+                <i class="fa-solid fa-table-columns"></i>
+                Dashboard
+              </a>
+              <a href="#" class="app-nav-item">
+                <i class="fa-solid fa-utensils"></i>
+                Diet Plan
+              </a>
+              <a href="#" class="app-nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+              <a href="#" class="app-nav-item">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical Skillset</h2>
+        <p>I develop full-stack applications with high emphasis on responsiveness, smooth user interfaces, and robust logical frameworks.</p>
+      </div>
+
+      <div class="skills-grid reveal">
+        <!-- Category 1: Frontend -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML5 / CSS3</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React / Next.js</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Mobile -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-mobile-screen-button"></i> Mobile</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">React Native</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Flutter / Dart</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">iOS & Android API</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Backend & Data -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-database"></i> Backend & Auth</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Node.js / Express</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Firebase / OAuth</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB / SQL</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: AI & Services -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-brain"></i> AI & Cloud</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Gemini API / AI Diet</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RESTful APIs</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git / CI-CD</span>
+              <div class="skill-percentage-track">
+                <div class="skill-percentage-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-badge">
+          <div class="about-badge-number">3+</div>
+          <div class="about-badge-label">Years Developing<br>Digital Products</div>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-tag">My Story</span>
+        <h3>Building projects that combine <span>health science</span> & <span>intuitive technology</span></h3>
+        <p>
+          I am Harsh Upadhyay, a developer driven by a passion for solving everyday problems through clean code and efficient architecture. I believe that tracking physical fitness and nutrition shouldn't be tedious.
+        </p>
+        <p>
+          By creating projects like <strong>fitByte</strong>, I explore how mobile user experiences can make calorie targets, diet strategies, and macro logs easily manageable. My experience spans mobile frameworks like React Native to responsive full-stack web solutions.
+        </p>
+        <a href="#contact" class="btn btn-primary" id="about-btn-cta">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p>Have an interesting project, opportunity, or just want to chat about fitness and tech? Drop me a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact details -->
+        <div class="contact-info reveal">
+          <h3 class="contact-info-title">Contact Details</h3>
+          
+          <a href="mailto:harshupadhysy750@gmail.com" class="contact-link-card" id="contact-email">
+            <div class="contact-icon-wrapper">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-card-text">
+              <span>Email Me</span>
+              <p>harshupadhysy750@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link-card" id="contact-github">
+            <div class="contact-icon-wrapper">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-card-text">
+              <span>View GitHub</span>
+              <p>github.com/harshupadhyay</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link-card" id="contact-linkedin">
+            <div class="contact-icon-wrapper">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-card-text">
+              <span>Connect on LinkedIn</span>
+              <p>linkedin.com/in/harshupadhyay</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <form id="portfolio-contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-input" placeholder=" " required>
+              <label for="form-name" class="form-label">Full Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-input" placeholder=" " required>
+              <label for="form-email" class="form-label">Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+              <label for="form-message" class="form-label">Your Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;" id="form-submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="#" class="footer-logo">
+        <div class="logo-dot"></div>
+        Harsh<span>Upadhyay</span>
+      </a>
+      
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#showcase">fitByte App</a></li>
+        <li><a href="#interactive">Interactive Demo</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:harshupadhysy750@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Harsh Upadhyay. All Rights Reserved. Crafted with passion & coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
