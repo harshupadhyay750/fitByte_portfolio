@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Harsh Upadhyay - Developer Portfolio. Showcasing fitByte, an AI-powered fitness, diet, and nutrition tracker app with customized dashboards and Google Auth.">
-  <meta name="keywords" content="Harsh Upadhyay, Developer, Portfolio, fitByte, Fitness App, AI Diet Planner, Mobile Developer, Full Stack, UI/UX">
+  <meta name="description" content="Harsh Upadhyay - Mobile & Full-Stack Developer Portfolio showcasing FitByte AI, an Android app built with Flutter, Dart, and Firebase featuring calorie tracking, personalized diet planning, and APK download.">
+  <meta name="keywords" content="Harsh Upadhyay, FitByte AI, Flutter, Dart, Firebase, Android App, APK Download, Diet Planner, Calorie Tracker, Mobile Developer, Full Stack">
   <meta name="author" content="Harsh Upadhyay">
-  <title>Harsh Upadhyay | Mobile & Full-Stack Developer - fitByte Showcase</title>
+  <meta property="og:title" content="FitByte AI - Android Fitness & Nutrition App by Harsh Upadhyay">
+  <meta property="og:description" content="Download FitByte AI v1.0.0 APK. Built with Flutter & Firebase for daily calorie tracking, macro visualizers, and personalized diet planning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/harshupadhyay750/fitByte_portfolio">
+  <title>Harsh Upadhyay | Mobile & Full-Stack Developer - FitByte AI Android App</title>
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -25,7 +29,7 @@
     <nav>
       <ul>
         <li><a href="#hero" class="active" id="nav-home">Home</a></li>
-        <li><a href="#showcase" id="nav-showcase">fitByte App</a></li>
+        <li><a href="#showcase" id="nav-showcase">FitByte AI</a></li>
         <li><a href="#interactive" id="nav-interactive">Interactive Demo</a></li>
         <li><a href="#skills" id="nav-skills">Skills</a></li>
         <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
@@ -48,36 +52,36 @@
           I build <span>digital health</span> experiences.
         </h1>
         <p class="hero-desc">
-          I am a Mobile & Full-Stack Developer specializing in crafting clean, performance-optimized, and user-centric applications. My flagship project, <strong>fitByte</strong>, combines AI nutrition planning with real-time calorie tracking.
+          I am a Mobile & Full-Stack Developer specializing in crafting clean, performance-optimized, and user-centric applications. My flagship project, <strong>FitByte AI</strong>, is an Android application built with Flutter, Dart, and Firebase that combines personalized diet planning with real-time calorie tracking.
         </p>
         <div class="hero-ctas">
           <a href="#showcase" class="btn btn-primary" id="hero-btn-primary">
-            Explore fitByte <i class="fa-solid fa-arrow-right"></i>
+            Explore FitByte AI <i class="fa-solid fa-arrow-right"></i>
           </a>
           <a href="#interactive" class="btn btn-secondary" id="hero-btn-secondary">
             Try Interactive Widget
           </a>
         </div>
         <div class="app-links">
-          <a href="#" class="app-btn play-store" id="hero-link-play">
-            <i class="fa-brands fa-google-play"></i>
+          <a href="https://github.com/harshupadhyay750/fitByte_portfolio/releases/download/v1.0.0/FitByte.apk" download="FitByte.apk" class="app-btn android-apk" id="hero-link-apk" aria-label="Download FitByte AI APK">
+            <i class="fa-brands fa-android"></i>
             <div class="app-btn-text">
-              <span class="btn-sub">GET IT ON</span>
-              <span class="btn-main">Google Play</span>
+              <span class="btn-sub">DIRECT DOWNLOAD</span>
+              <span class="btn-main">Download APK</span>
             </div>
           </a>
-          <a href="#" class="app-btn app-store" id="hero-link-apple">
-            <i class="fa-brands fa-apple"></i>
-            <div class="app-btn-text">
-              <span class="btn-sub">Download on the</span>
-              <span class="btn-main">App Store</span>
-            </div>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="app-btn github-code" id="hero-link-github">
+          <a href="https://github.com/harshupadhyay750/fitByte_portfolio" target="_blank" rel="noopener" class="app-btn github-code" id="hero-link-github" aria-label="View FitByte AI Source Code on GitHub">
             <i class="fa-brands fa-github"></i>
             <div class="app-btn-text">
               <span class="btn-sub">View Source</span>
               <span class="btn-main">GitHub Code</span>
+            </div>
+          </a>
+          <a href="#interactive" class="app-btn interactive-badge" id="hero-link-demo" aria-label="Try Interactive Web Demo">
+            <i class="fa-solid fa-sliders"></i>
+            <div class="app-btn-text">
+              <span class="btn-sub">LIVE SIMULATOR</span>
+              <span class="btn-main">Web Demo</span>
             </div>
           </a>
         </div>
@@ -97,35 +101,85 @@
   <!-- fitByte App Showcase Section -->
   <section id="showcase">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Flagship Project</span>
-        <h2 class="section-title">fitByte — AI Fitness & Nutrition</h2>
-        <p>A smart, intuitive health companion that tracks calories, macros, and water intake while using AI to plan vegetarian diet strategies.</p>
-        <div class="app-links" style="justify-content: center; margin-top: 2rem;">
-          <a href="#" class="app-btn play-store" id="showcase-link-play">
-            <i class="fa-brands fa-google-play"></i>
-            <div class="app-btn-text">
-              <span class="btn-sub">GET IT ON</span>
-              <span class="btn-main">Google Play</span>
-            </div>
-          </a>
-          <a href="#" class="app-btn app-store" id="showcase-link-apple">
-            <i class="fa-brands fa-apple"></i>
-            <div class="app-btn-text">
-              <span class="btn-sub">Download on the</span>
-              <span class="btn-main">App Store</span>
-            </div>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="app-btn github-code" id="showcase-link-github">
-            <i class="fa-brands fa-github"></i>
-            <div class="app-btn-text">
-              <span class="btn-sub">View Source</span>
-              <span class="btn-main">GitHub Code</span>
-            </div>
-          </a>
+      
+      <!-- Section Header & App Introduction -->
+      <div class="section-header showcase-header reveal">
+        <div class="app-intro-badge-row">
+          <span class="app-badge app-badge-android"><i class="fa-brands fa-android"></i> Android Application</span>
+          <span class="app-badge app-badge-version"><i class="fa-solid fa-tag"></i> v1.0.0</span>
+          <span class="app-badge app-badge-tech"><i class="fa-solid fa-layer-group"></i> Flutter &amp; Dart</span>
+          <span class="app-badge app-badge-tech"><i class="fa-solid fa-fire"></i> Firebase Backend</span>
+        </div>
+
+        <div class="app-brand-lockup">
+          <div class="app-icon-container" aria-hidden="true">
+            <svg class="app-icon-svg" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="72" height="72" rx="18" fill="url(#appIconGrad)" />
+              <rect x="1.5" y="1.5" width="69" height="69" rx="16.5" stroke="rgba(255,255,255,0.15)" stroke-width="3" />
+              <!-- Stylish 'F' + Heartbeat / Pulse / Calorie Bar Motif -->
+              <path d="M22 20H48C50.2 20 52 21.8 52 24C52 26.2 50.2 28 48 28H30V34H44C46.2 34 48 35.8 48 38C48 40.2 46.2 42 44 42H30V52C30 54.2 28.2 56 26 56C23.8 56 22 54.2 22 52V20Z" fill="#FFFFFF" fill-opacity="0.95"/>
+              <path d="M41 48L44 43L48 51L51 46L54 48" stroke="var(--color-primary-light)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="54" cy="48" r="2" fill="var(--color-primary-light)"/>
+              <defs>
+                <linearGradient id="appIconGrad" x1="0" y1="0" x2="72" y2="72" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#162238" />
+                  <stop offset="1" stop-color="#0b101d" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="app-brand-text">
+            <span class="section-tag">Flagship Android Project</span>
+            <h2 class="section-title app-title">FitByte AI</h2>
+          </div>
+        </div>
+
+        <p class="app-tagline">"Your Personal AI-Powered Nutrition &amp; Fitness Companion."</p>
+        
+        <p class="app-description">
+          FitByte AI is an Android application engineered with Flutter and Dart, backed by Firebase cloud infrastructure. Built to eliminate the friction of health tracking, FitByte AI equips users with real-time calorie calculations, macronutrient balance monitoring, personalized vegetarian diet planning, and cloud-synced profile management in a fluid, dark-themed mobile experience.
+        </p>
+
+        <!-- Prominent Download & Action Buttons -->
+        <div class="showcase-cta-group">
+          <div class="showcase-cta-buttons">
+            <a href="https://github.com/harshupadhyay750/fitByte_portfolio/releases/download/v1.0.0/FitByte.apk" 
+               download="FitByte.apk" 
+               class="btn btn-download-apk" 
+               id="showcase-btn-download"
+               aria-label="Download FitByte AI APK Version 1.0.0">
+              <span class="btn-download-icon"><i class="fa-solid fa-download"></i></span>
+              <span class="btn-download-content">
+                <span class="btn-download-primary">Download APK</span>
+                <span class="btn-download-secondary">Direct Android Package</span>
+              </span>
+            </a>
+
+            <a href="https://github.com/harshupadhyay750/fitByte_portfolio" 
+               target="_blank" 
+               rel="noopener" 
+               class="btn btn-secondary btn-source-code" 
+               id="showcase-btn-source"
+               aria-label="View FitByte AI Source Code on GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>View Source Code</span>
+            </a>
+          </div>
+
+          <!-- Version, Platform and File Size Meta strip -->
+          <div class="download-meta-strip">
+            <span class="meta-pill"><i class="fa-solid fa-code-branch"></i> Version 1.0.0</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-pill"><i class="fa-brands fa-android"></i> Android 8.0+</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-pill"><i class="fa-solid fa-file-zipper"></i> 29 MB</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-pill"><i class="fa-solid fa-shield-halved"></i> Direct Release</span>
+          </div>
         </div>
       </div>
 
+      <!-- Device Carousel & Feature Highlights -->
       <div class="showcase-grid">
         <!-- Left Side: Phone Device Carousel -->
         <div class="showcase-mockup-area reveal">
@@ -134,36 +188,36 @@
               <div class="showcase-slider-container" id="showcase-slider">
                 <!-- Slide 1: Welcome & Login -->
                 <div class="showcase-slide">
-                  <div class="slide-zoom-trigger" data-slide-idx="0">
-                    <img src="assets/media__1781517113382.jpg" alt="fitByte Login Screen">
+                  <div class="slide-zoom-trigger" data-slide-idx="0" title="Click to view full screen">
+                    <img src="assets/media__1781517113382.jpg" alt="FitByte AI Welcome and Login Screen">
                     <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                   </div>
                 </div>
                 <!-- Slide 2: Google Sign-In -->
                 <div class="showcase-slide">
-                  <div class="slide-zoom-trigger" data-slide-idx="1">
-                    <img src="assets/media__1781517113421.jpg" alt="fitByte Google Auth Dialog">
+                  <div class="slide-zoom-trigger" data-slide-idx="1" title="Click to view full screen">
+                    <img src="assets/media__1781517113421.jpg" alt="FitByte AI Firebase Google Auth Dialog">
                     <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                   </div>
                 </div>
                 <!-- Slide 3: Smart Dashboard -->
                 <div class="showcase-slide">
-                  <div class="slide-zoom-trigger" data-slide-idx="2">
-                    <img src="assets/media__1781517113429.jpg" alt="fitByte Calories & Macro Dashboard">
+                  <div class="slide-zoom-trigger" data-slide-idx="2" title="Click to view full screen">
+                    <img src="assets/media__1781517113429.jpg" alt="FitByte AI Daily Calories and Macronutrient Dashboard">
                     <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                   </div>
                 </div>
                 <!-- Slide 4: AI Diet Planner -->
                 <div class="showcase-slide">
-                  <div class="slide-zoom-trigger" data-slide-idx="3">
-                    <img src="assets/media__1781517113399.jpg" alt="fitByte AI Diet Strategy">
+                  <div class="slide-zoom-trigger" data-slide-idx="3" title="Click to view full screen">
+                    <img src="assets/media__1781517113399.jpg" alt="FitByte AI Personalized Diet Strategy Planner">
                     <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                   </div>
                 </div>
                 <!-- Slide 5: Live Dashboard Sync -->
                 <div class="showcase-slide">
-                  <div class="slide-zoom-trigger" data-slide-idx="4">
-                    <img src="assets/media__1781517113447.jpg" alt="fitByte Diet Planner Sync">
+                  <div class="slide-zoom-trigger" data-slide-idx="4" title="Click to view full screen">
+                    <img src="assets/media__1781517113447.jpg" alt="FitByte AI Real-Time Cloud Food Sync and Goal Progress">
                     <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                   </div>
                 </div>
@@ -184,32 +238,329 @@
 
         <!-- Right Side: Info cards matching slides -->
         <div class="showcase-info-cards reveal">
-          <div class="info-card active" data-slide="0" id="card-step-0">
-            <h3><i class="fa-solid fa-right-to-bracket"></i> Intuitive Login & Onboarding</h3>
-            <p>Elegant design welcome interface built for effortless onboarding, keeping users engaged from the very first tap.</p>
+          <div class="info-card active" data-slide="0" id="card-step-0" tabindex="0" role="button" aria-label="Show Login and Onboarding slide">
+            <div class="info-card-header">
+              <span class="info-step-number">01</span>
+              <h3><i class="fa-solid fa-right-to-bracket"></i> Intuitive Login &amp; Onboarding</h3>
+            </div>
+            <p>Clean, dark-themed welcome screen built for friction-free onboarding. Supports instant email authentication and persistent user credentials.</p>
           </div>
           
-          <div class="info-card" data-slide="1" id="card-step-1">
-            <h3><i class="fa-brands fa-google"></i> Multi-Account Google Sign-In</h3>
-            <p>Seamlessly integrated Firebase OAuth supporting multiple accounts with secure, quick sign-in profiles.</p>
+          <div class="info-card" data-slide="1" id="card-step-1" tabindex="0" role="button" aria-label="Show Firebase Google Auth slide">
+            <div class="info-card-header">
+              <span class="info-step-number">02</span>
+              <h3><i class="fa-brands fa-google"></i> Multi-Account Google Sign-In</h3>
+            </div>
+            <p>Seamlessly integrated Firebase OAuth architecture allowing users to select Google accounts securely with single-tap token authorization.</p>
           </div>
           
-          <div class="info-card" data-slide="2" id="card-step-2">
-            <h3><i class="fa-solid fa-chart-pie"></i> Smart Dashboard Tracker</h3>
-            <p>Provides a clean calorie breakdown: Goals, Eaten (e.g. dal chawal), Burned, and macro rings tracking Protein, Carbs, and Fats in real time.</p>
+          <div class="info-card" data-slide="2" id="card-step-2" tabindex="0" role="button" aria-label="Show Smart Calorie Dashboard slide">
+            <div class="info-card-header">
+              <span class="info-step-number">03</span>
+              <h3><i class="fa-solid fa-chart-pie"></i> Daily Calorie &amp; Macro Dashboard</h3>
+            </div>
+            <p>Dynamic health dashboard calculating remaining calories in real time. Highlights daily goals, food logged, calories burned, and active macronutrient rings.</p>
           </div>
           
-          <div class="info-card" data-slide="3" id="card-step-3">
-            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Diet Planner</h3>
-            <p>Generates targeted calorie strategies (like Weight Loss Deficit) and maps out required macronutrients (179g Protein, 239g Carbs, 79g Fat).</p>
+          <div class="info-card" data-slide="3" id="card-step-3" tabindex="0" role="button" aria-label="Show AI Diet Strategy Planner slide">
+            <div class="info-card-header">
+              <span class="info-step-number">04</span>
+              <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Personalized Diet Strategy Planner</h3>
+            </div>
+            <p>Formulates targeted diet deficit limits (e.g. Weight Loss Deficit at 2395 kcal) and calculates exact gram targets for Protein, Carbohydrates, and Fats.</p>
           </div>
           
-          <div class="info-card" data-slide="4" id="card-step-4">
-            <h3><i class="fa-solid fa-arrows-rotate"></i> Real-time Dashboard Sync</h3>
-            <p>Automated cloud sync dynamically monitors logs and prompts helpful sync feedback banners e.g., "You have reached 17% of your daily goal."</p>
+          <div class="info-card" data-slide="4" id="card-step-4" tabindex="0" role="button" aria-label="Show Cloud Sync and Meal Log slide">
+            <div class="info-card-header">
+              <span class="info-step-number">05</span>
+              <h3><i class="fa-solid fa-arrows-rotate"></i> Real-time Meal Sync &amp; Tracking</h3>
+            </div>
+            <p>Automated cloud sync dynamically monitors meal entries, providing real-time feedback notifications such as daily goal milestone achievements.</p>
           </div>
         </div>
       </div>
+
+      <!-- Screenshots Gallery Strip -->
+      <div class="screenshots-gallery-section reveal">
+        <div class="gallery-header">
+          <span class="section-tag">Visual Walkthrough</span>
+          <h3 class="gallery-title"><i class="fa-solid fa-images"></i> Application Screenshots</h3>
+          <p class="gallery-subtitle">Click any screenshot below to inspect the actual Flutter UI in full resolution.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 0 -->
+          <div class="gallery-item gallery-zoom-trigger" data-slide-idx="0" tabindex="0" role="button" aria-label="View Login Screen screenshot in high resolution">
+            <div class="gallery-thumb-wrapper">
+              <img src="assets/media__1781517113382.jpg" alt="FitByte AI Welcome &amp; Login Screen UI" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-tag">Auth</span>
+              <h4 class="gallery-item-name">Welcome &amp; Login</h4>
+            </div>
+          </div>
+
+          <!-- Item 1 -->
+          <div class="gallery-item gallery-zoom-trigger" data-slide-idx="1" tabindex="0" role="button" aria-label="View Google Auth screenshot in high resolution">
+            <div class="gallery-thumb-wrapper">
+              <img src="assets/media__1781517113421.jpg" alt="FitByte AI Google Auth Selector UI" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-tag">OAuth</span>
+              <h4 class="gallery-item-name">Google Sign-In</h4>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item gallery-zoom-trigger" data-slide-idx="2" tabindex="0" role="button" aria-label="View Dashboard screenshot in high resolution">
+            <div class="gallery-thumb-wrapper">
+              <img src="assets/media__1781517113429.jpg" alt="FitByte AI Calorie &amp; Macro Dashboard UI" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-tag">Tracker</span>
+              <h4 class="gallery-item-name">Smart Dashboard</h4>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item gallery-zoom-trigger" data-slide-idx="3" tabindex="0" role="button" aria-label="View Diet Planner screenshot in high resolution">
+            <div class="gallery-thumb-wrapper">
+              <img src="assets/media__1781517113399.jpg" alt="FitByte AI Diet Strategy Planner UI" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-tag">AI Plan</span>
+              <h4 class="gallery-item-name">Diet Strategy</h4>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item gallery-zoom-trigger" data-slide-idx="4" tabindex="0" role="button" aria-label="View Meal Sync screenshot in high resolution">
+            <div class="gallery-thumb-wrapper">
+              <img src="assets/media__1781517113447.jpg" alt="FitByte AI Food Sync &amp; Progress UI" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <span class="gallery-item-tag">Sync</span>
+              <h4 class="gallery-item-name">Meal Logging</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Features Section -->
+      <div class="app-features-section reveal">
+        <div class="features-section-header">
+          <span class="section-tag">Capabilities</span>
+          <h3 class="features-main-title">Core Application Features</h3>
+          <p class="features-main-subtitle">Every feature below is implemented in the FitByte AI Flutter codebase and demonstrated in the app screenshots.</p>
+        </div>
+
+        <div class="app-features-grid">
+          <!-- Feature 1 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>User Authentication with Firebase</h4>
+                <span class="feature-tag">Firebase Auth</span>
+              </div>
+              <p>Reliable sign-in architecture supporting email credentials and single-tap Google OAuth. User sessions persist securely across application launches.</p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Personalized Diet Planning</h4>
+                <span class="feature-tag">Diet Strategy</span>
+              </div>
+              <p>Generates tailored caloric targets and macronutrient distributions (e.g. Weight Loss Deficit at 2395 kcal) tailored to individual body metrics and goals.</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Daily Calorie Tracking</h4>
+                <span class="feature-tag">Real-Time Math</span>
+              </div>
+              <p>Dynamically computes remaining calories by subtracting eaten meals and adding back calories burned from tracked workouts in real time.</p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Nutrition Information</h4>
+                <span class="feature-tag">Macro Breakdown</span>
+              </div>
+              <p>Provides clear visibility into essential macronutrients—tracking daily grams consumed against targets for Protein (179g), Carbs (239g), and Fats (79g).</p>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Meal Planning</h4>
+                <span class="feature-tag">Food Logging</span>
+              </div>
+              <p>Organized meal recording for breakfast, lunch, dinner, and snacks. Logs Indian and vegetarian dietary items with immediate caloric updates.</p>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Fitness and Health Goals</h4>
+                <span class="feature-tag">Milestone Tracking</span>
+              </div>
+              <p>Set custom target objectives, monitor daily adherence percentages, and stay accountable with visual completion gauges and milestone banners.</p>
+            </div>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>User Profile Management</h4>
+                <span class="feature-tag">Profile Sync</span>
+              </div>
+              <p>Stores personal preferences, avatar identifiers, target parameters, and health data with synchronized Firebase Firestore backend integration.</p>
+            </div>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="app-feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-card-top">
+                <h4>Modern Flutter UI</h4>
+                <span class="feature-tag">Flutter &amp; Dart</span>
+              </div>
+              <p>Engineered with custom Flutter widgets, high-contrast dark aesthetic, responsive mobile layouts, and fluid 60fps micro-interactions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Instructions Section -->
+      <div class="installation-section reveal">
+        <div class="install-header">
+          <span class="section-tag">Step-by-Step Guide</span>
+          <h3 class="install-title">How to Install FitByte AI</h3>
+          <p class="install-subtitle">Follow these simple steps to install the FitByte AI APK directly on your Android device.</p>
+        </div>
+
+        <div class="install-steps-grid">
+          <div class="install-step-card">
+            <div class="step-badge">1</div>
+            <div class="step-content">
+              <h4>Click Download APK</h4>
+              <p>Tap the <strong>Download APK</strong> button above or click the direct release link to download the <code>FitByte.apk</code> file (~29 MB).</p>
+            </div>
+          </div>
+
+          <div class="install-step-card">
+            <div class="step-badge">2</div>
+            <div class="step-content">
+              <h4>Wait for Download</h4>
+              <p>Allow your mobile browser or download manager to finish saving the APK package to your Android device.</p>
+            </div>
+          </div>
+
+          <div class="install-step-card">
+            <div class="step-badge">3</div>
+            <div class="step-content">
+              <h4>Open the APK File</h4>
+              <p>Tap the download completion notification or navigate to your device's <strong>Downloads</strong> folder and tap <code>FitByte.apk</code>.</p>
+            </div>
+          </div>
+
+          <div class="install-step-card">
+            <div class="step-badge">4</div>
+            <div class="step-content">
+              <h4>Allow Permission</h4>
+              <p>If Android displays an "Unknown Sources" prompt, tap <strong>Settings</strong> and toggle <strong>Allow from this source</strong> to proceed.</p>
+            </div>
+          </div>
+
+          <div class="install-step-card">
+            <div class="step-badge">5</div>
+            <div class="step-content">
+              <h4>Tap Install</h4>
+              <p>Confirm the package prompt by tapping <strong>Install</strong>. Android will verify and install FitByte AI in seconds.</p>
+            </div>
+          </div>
+
+          <div class="install-step-card">
+            <div class="step-badge">6</div>
+            <div class="step-content">
+              <h4>Open &amp; Enjoy</h4>
+              <p>Tap <strong>Open</strong> to launch FitByte AI, sign in with your account, and start managing your nutrition and fitness goals!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Android Security Advisory Callout -->
+        <div class="install-security-callout">
+          <div class="security-callout-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="security-callout-body">
+            <h4>Android Security Notice</h4>
+            <p>
+              Because FitByte AI is distributed directly via <strong>GitHub Releases</strong> as a standalone APK package rather than through the Google Play Store, Android and Google Play Protect may display a routine warning (such as <em>"File might be harmful"</em> or <em>"Install unknown apps"</em>). This is standard Android security protocol for any third-party APK installation. The application is completely clean, safe, and built directly from the verified open-source repository.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -595,13 +946,13 @@
             </div>
           </a>
 
-          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link-card" id="contact-github">
+          <a href="https://github.com/harshupadhyay750/fitByte_portfolio" target="_blank" rel="noopener" class="contact-link-card" id="contact-github">
             <div class="contact-icon-wrapper">
               <i class="fa-brands fa-github"></i>
             </div>
             <div class="contact-card-text">
               <span>View GitHub</span>
-              <p>github.com/harshupadhyay</p>
+              <p>github.com/harshupadhyay750</p>
             </div>
           </a>
 
@@ -653,13 +1004,13 @@
       
       <ul class="footer-nav">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#showcase">fitByte App</a></li>
+        <li><a href="#showcase">FitByte AI</a></li>
         <li><a href="#interactive">Interactive Demo</a></li>
         <li><a href="#skills">Skills</a></li>
       </ul>
 
       <div class="footer-socials">
-        <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/harshupadhyay750/fitByte_portfolio" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
         <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="mailto:harshupadhysy750@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>

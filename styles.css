@@ -2146,3 +2146,789 @@ footer {
 }
 
 
+
+
+/* ==========================================
+   FitByte AI — Enhanced Showcase Section Styles
+   Appended by Antigravity | Nov 2026
+   ========================================== */
+
+/* ------------------------------------------
+   App Introduction Badge Row
+   ------------------------------------------ */
+.app-intro-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+}
+
+.app-badge i {
+  font-size: 0.8rem;
+}
+
+.app-badge-android {
+  border-color: rgba(63, 137, 72, 0.4);
+  background: rgba(63, 137, 72, 0.08);
+  color: var(--color-primary-light);
+}
+
+.app-badge-version {
+  border-color: rgba(59, 91, 219, 0.35);
+  background: rgba(59, 91, 219, 0.07);
+  color: #7c9cf0;
+}
+
+.app-badge-tech {
+  color: var(--color-text-muted);
+}
+
+/* ------------------------------------------
+   App Brand Lockup (Icon + Name)
+   ------------------------------------------ */
+.app-brand-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.app-icon-container {
+  flex-shrink: 0;
+}
+
+.app-icon-svg {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+  display: block;
+}
+
+.app-brand-text {
+  text-align: left;
+}
+
+.app-brand-text .section-tag {
+  margin-bottom: 0.25rem;
+}
+
+.app-title {
+  margin-bottom: 0 !important;
+  line-height: 1;
+}
+
+/* Tagline styling */
+.app-tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--color-primary-light);
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+/* App description text */
+.app-description {
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+/* ------------------------------------------
+   Showcase Section header overrides
+   ------------------------------------------ */
+.showcase-header {
+  max-width: 780px;
+}
+
+/* ------------------------------------------
+   Download CTA Group
+   ------------------------------------------ */
+.showcase-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.showcase-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Download APK Button */
+.btn-download-apk {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 2rem;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--font-title);
+  font-weight: 700;
+  transition: var(--transition-bounce);
+  box-shadow: 0 4px 20px var(--color-primary-glow);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-download-apk::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.btn-download-apk:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px var(--color-primary-glow), 0 0 0 1px var(--color-primary-light);
+}
+
+.btn-download-apk:active {
+  transform: translateY(-1px);
+}
+
+.btn-download-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.btn-download-apk:hover .btn-download-icon {
+  transform: scale(1.1) translateY(-1px);
+}
+
+.btn-download-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.btn-download-primary {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn-download-secondary {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Secondary Source Code Button */
+.btn-source-code {
+  padding: 0.85rem 1.75rem;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+/* Version / Meta strip below buttons */
+.download-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.meta-pill i {
+  color: var(--color-primary-light);
+  font-size: 0.75rem;
+}
+
+.meta-divider {
+  color: var(--color-border-hover);
+  font-size: 0.85rem;
+}
+
+/* ------------------------------------------
+   Info Card Header (step number + title row)
+   ------------------------------------------ */
+.info-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.info-step-number {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.06em;
+  background: rgba(63, 137, 72, 0.1);
+  border: 1px solid rgba(63, 137, 72, 0.25);
+  border-radius: 6px;
+  padding: 0.15rem 0.4rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.info-card-header h3 {
+  margin-bottom: 0 !important;
+}
+
+/* ------------------------------------------
+   Android APK hero badge button
+   ------------------------------------------ */
+.app-btn.android-apk {
+  background: var(--color-primary);
+  border-color: var(--color-primary-dark);
+}
+.app-btn.android-apk:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+.app-btn.android-apk i {
+  color: #ffffff;
+}
+
+/* Interactive badge hero button */
+.app-btn.interactive-badge {
+  background: var(--color-bg-card);
+}
+.app-btn.interactive-badge:hover {
+  background: var(--color-bg-card-hover);
+}
+
+/* ------------------------------------------
+   Screenshots Gallery Section
+   ------------------------------------------ */
+.screenshots-gallery-section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-title i {
+  color: var(--color-primary-light);
+  margin-right: 0.5rem;
+}
+
+.gallery-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  cursor: zoom-in;
+  transition: var(--transition-bounce);
+  outline: none;
+}
+
+.gallery-item:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-primary);
+}
+
+.gallery-item:focus-visible {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.gallery-thumb-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9 / 19;
+}
+
+.gallery-thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-thumb-wrapper img {
+  transform: scale(1.05);
+}
+
+.gallery-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #ffffff;
+}
+
+.gallery-hover-overlay i {
+  font-size: 1.5rem;
+}
+
+.gallery-hover-overlay span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gallery-item:hover .gallery-hover-overlay {
+  opacity: 1;
+}
+
+.gallery-item-info {
+  padding: 0.6rem 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.gallery-item-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary-light);
+}
+
+.gallery-item-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  font-family: var(--font-title);
+}
+
+/* ------------------------------------------
+   App Features Grid Section
+   ------------------------------------------ */
+.app-features-section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.features-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features-main-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.features-main-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.app-feature-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.app-feature-card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: rgba(63, 137, 72, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.app-feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(63, 137, 72, 0.1);
+  border: 1px solid rgba(63, 137, 72, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+.app-feature-card:hover .feature-icon-wrapper {
+  background: rgba(63, 137, 72, 0.18);
+}
+
+.feature-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.feature-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.feature-card-top h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-title);
+  line-height: 1.3;
+}
+
+.feature-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary-light);
+  background: rgba(63, 137, 72, 0.1);
+  border: 1px solid rgba(63, 137, 72, 0.2);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  align-self: flex-start;
+}
+
+.app-feature-card p {
+  font-size: 0.83rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ------------------------------------------
+   Installation Steps Section
+   ------------------------------------------ */
+.installation-section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.install-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.install-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.install-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.install-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.install-step-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: var(--transition-smooth);
+}
+
+.install-step-card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-border-hover);
+  transform: translateY(-3px);
+}
+
+.step-badge {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-title);
+  font-size: 0.9rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px var(--color-primary-glow);
+}
+
+.step-content h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+  font-family: var(--font-title);
+}
+
+.step-content p {
+  font-size: 0.83rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.step-content code {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.78rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-primary-light);
+}
+
+/* Security callout card */
+.install-security-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(59, 91, 219, 0.07);
+  border: 1px solid rgba(59, 91, 219, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-top: 0.5rem;
+}
+
+.security-callout-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: rgba(59, 91, 219, 0.12);
+  border: 1px solid rgba(59, 91, 219, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #7c9cf0;
+}
+
+.security-callout-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-title);
+}
+
+.security-callout-body p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.security-callout-body p strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.security-callout-body p em {
+  font-style: italic;
+  color: #c8c8cc;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS – New Elements
+   ========================================== */
+
+@media (max-width: 1200px) {
+  .app-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .app-brand-lockup {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .app-brand-text {
+    text-align: center;
+  }
+  .install-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .app-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .app-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .install-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .showcase-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-download-apk,
+  .btn-source-code {
+    justify-content: center;
+    text-align: center;
+  }
+  .install-security-callout {
+    flex-direction: column;
+  }
+  .download-meta-strip {
+    gap: 0.3rem;
+  }
+  .meta-divider {
+    display: none;
+  }
+  .app-intro-badge-row {
+    gap: 0.35rem;
+  }
+  .app-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.65rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-title {
+    font-size: 1.4rem;
+  }
+  .features-main-title,
+  .install-title {
+    font-size: 1.4rem;
+  }
+  .btn-download-apk {
+    padding: 0.75rem 1.5rem;
+  }
+  .install-security-callout {
+    padding: 1.25rem;
+  }
+  .app-icon-svg {
+    width: 60px;
+    height: 60px;
+  }
+}

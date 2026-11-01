@@ -129,6 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Click direct info card to change slide
   infoCards.forEach((card, i) => {
     card.addEventListener('click', () => goToSlide(i));
+    // Keyboard accessibility for info cards
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        goToSlide(i);
+      }
+    });
   });
 
   // Auto-play slider slowly, resets on user interaction
@@ -183,33 +190,70 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxPrevBtn = document.getElementById('lightbox-prev-btn');
   const lightboxNextBtn = document.getElementById('lightbox-next-btn');
   const zoomTriggers = document.querySelectorAll('.slide-zoom-trigger');
+  const galleryZoomTriggers = document.querySelectorAll('.gallery-zoom-trigger');
   
   let currentZoomIdx = 0;
   
   const slideDescriptions = [
-    "Intuitive Onboarding: Welcome interface styled to deliver modern, dark-theme app entry.",
-    "Firebase Google OAuth: Integrates profile selector support with cloud sync.",
-    "Smart calorie & macros visual indicators dashboard ring gauge.",
-    "AI vegetarian Indian strategy diet planner macro parameters calculator.",
-    "Cloud automated logging syncing banner alerts feedback templates."
+    "FitByte AI — Welcome & Login Screen: Dark-themed onboarding interface for immediate user engagement.",
+    "FitByte AI — Firebase Google Auth: Single-tap multi-account OAuth sign-in powered by Firebase Authentication.",
+    "FitByte AI — Daily Calorie & Macro Dashboard: Real-time remaining calorie calculations and macronutrient ring progress.",
+    "FitByte AI — Personalized Diet Strategy Planner: AI-assisted macro target computation for weight loss, maintenance, or gain.",
+    "FitByte AI — Meal Logging & Cloud Sync: Real-time food entry tracking with Firebase cloud sync and milestone notifications."
   ];
 
   function openLightbox(idx) {
     currentZoomIdx = idx;
-    const trigger = zoomTriggers[idx];
-    if (!trigger || !lightboxModal) return;
-    
-    const img = trigger.querySelector('img');
-    lightboxImg.src = img.src;
-    lightboxCaption.textContent = slideDescriptions[idx];
+    if (!lightboxModal) return;
+
+    // Try carousel trigger first, then gallery trigger
+    let imgSrc = '';
+    if (zoomTriggers[idx]) {
+      const img = zoomTriggers[idx].querySelector('img');
+      if (img) imgSrc = img.src;
+    }
+    // Fallback to gallery triggers (same images, same index order)
+    if (!imgSrc && galleryZoomTriggers[idx]) {
+      const img = galleryZoomTriggers[idx].querySelector('img');
+      if (img) imgSrc = img.src;
+    }
+    if (!imgSrc) return;
+
+    lightboxImg.src = imgSrc;
+    lightboxImg.alt = slideDescriptions[idx] || 'FitByte AI Screenshot';
+    lightboxCaption.textContent = slideDescriptions[idx] || '';
     lightboxModal.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Lock background scroll
   }
   
+  // Bind carousel slide zoom triggers
   zoomTriggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       const idx = parseInt(trigger.dataset.slideIdx);
       openLightbox(idx);
+    });
+    // Keyboard accessibility
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const idx = parseInt(trigger.dataset.slideIdx);
+        openLightbox(idx);
+      }
+    });
+  });
+
+  // Bind gallery thumbnail zoom triggers (same lightbox, same image pool)
+  galleryZoomTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const idx = parseInt(trigger.dataset.slideIdx);
+      openLightbox(idx);
+    });
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const idx = parseInt(trigger.dataset.slideIdx);
+        openLightbox(idx);
+      }
     });
   });
   
@@ -230,10 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
+  // Total unique images for lightbox navigation = 5 slides
+  const totalLightboxImages = 5;
+
   if (lightboxPrevBtn) {
     lightboxPrevBtn.addEventListener('click', () => {
       let prevIdx = currentZoomIdx - 1;
-      if (prevIdx < 0) prevIdx = zoomTriggers.length - 1;
+      if (prevIdx < 0) prevIdx = totalLightboxImages - 1;
       openLightbox(prevIdx);
     });
   }
@@ -241,10 +288,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lightboxNextBtn) {
     lightboxNextBtn.addEventListener('click', () => {
       let nextIdx = currentZoomIdx + 1;
-      if (nextIdx >= zoomTriggers.length) nextIdx = 0;
+      if (nextIdx >= totalLightboxImages) nextIdx = 0;
       openLightbox(nextIdx);
     });
   }
+
+  // Also close lightbox with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxModal && lightboxModal.style.display === 'flex') {
+      lightboxModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  });
 
   // ==========================================
   // 5. Advanced Live fitByte Simulator Engine
